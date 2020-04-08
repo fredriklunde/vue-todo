@@ -9,6 +9,7 @@
     <!-- The app uses a very limited number of styles, found in its local CSS file here. -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="container col-lg-4">
     <h1 class="mt-5">
         Vue TodoMVC
@@ -48,6 +49,7 @@
 
                                 <!-- Here we see an example of Vue's {{ }} syntax, which is quite familiar to any Angular or Handlebars users.-->
                                 {{ todo.name }}
+                                <button class="btn btn-warning" v-on:click="removeTodo(todo.name)">Remove</button>
                             </span>
                     </label>
                 </li>
